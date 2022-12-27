@@ -9,14 +9,18 @@
     "lint": "eslint --ext .js src tests",
     "lint:fix": "yarn lint --fix",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "format": "prettier --config .prettierrc \"{src,tests}/**/*.{ts,css,less,scss,js,json,md,yaml,html}\" --write"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^22.0.0",
-    "jest": "^23.6.0"
+    "eslint-plugin-jest": "^27.1.7",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.3.1",
+    "prettier": "^2.8.1"
   },
   "repository": {
     "type": "git",
@@ -33,5 +37,8 @@
   "engines": {
     "yarn": ">=1.10.1",
     "node": ">=6.14.4"
+  },
+  "dependencies": {
+    "stopword": "^2.0.5"
   }
 }

@@ -39,7 +39,7 @@ Results:
 
 ``` bash
 # install Yarn
-npm install -g yarn@1.12.3
+npm install -g yarn
 ```
 
 ## Build Setup
