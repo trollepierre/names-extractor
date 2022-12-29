@@ -1,13 +1,14 @@
 {
   "root": true,
-  "extends": "airbnb-base",
+  "extends": ["airbnb-base",  "prettier"],
   "env": {
     "jest": true,
     "jest/globals": true
 
   },
-  "plugins": [ "jest" ],
+  "plugins": [ "jest", "prettier" ],
   "rules": {
+    "prettier/prettier": "error",
     "no-multi-str": 0,
     "no-param-reassign": 0,
     "no-underscore-dangle": 0,
